@@ -60,8 +60,8 @@ for i in range(n):
         minimumindex=i
 # print(minimum,minimumindex)
 print(a)
-# temp=a[0]
-# a[0]=a[minimumindex]
+temp=a[0]
+a[0]=a[minimumindex]
 # a[minimumindex]=temp
-a[0],a[minimumindex]=a[minimumindex],a[0]
+# a[0],a[minimumindex]=a[minimumindex],a[0]
 print(a)
