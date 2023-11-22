@@ -1,3 +1,21 @@
+'''
+                          Assignment 1-:- Singly Linked List
+1. Define a class Node to describe a node of a singly linked list.
+2. Define a class SLL to implement Singly Linked list with __init__() method to create and initialise
+   start reference variable.
+3. Define a method is_empty() to check if the linked list is empty in SLL class.
+4. In class SLL, define a method insert_at_start() to insert an element at the starting of the list.
+5. In class SLL, define a method insert_at_last() to insert an element at the end of the list.
+6. In class SLL, define a method search() to find a node with specified element value.
+7. In class SLL, define a method insert_after() to insert a new node after a given node of the list.
+8. In class SLL, define a method to print all the elements of the list.
+9. In class SLL, implement Iterator for SLL to access all the elements of the list in a sequence.
+10.In class SLL, define a method  delete_first() to delete first element from the list.
+11.In class SLL, define a method  delete_last() to delete last element from the list.
+10.In class SLL, define a method  delete_item() to delete specified element from the list.
+
+
+'''
 class Node:
     def __init__(self, item=None, next=None):
         self.item = item
@@ -98,12 +116,12 @@ class SLLIterator:
 
 
 # driver code
-mylist = SLL()
-mylist.insert_at_start(88)
-mylist.insert_at_start(78)
-mylist.insert_at_last(99)
-mylist.insert_after(mylist.search(99), 77)
-mylist.print_list()
+# mylist = SLL()
+# mylist.insert_at_start(88)
+# mylist.insert_at_start(78)
+# mylist.insert_at_last(99)
+# mylist.insert_after(mylist.search(99), 77)
+# mylist.print_list()
 
 # mylist.delete_first()
 # mylist.print_list()
@@ -114,5 +132,5 @@ mylist.print_list()
 # mylist.delete_item(55)
 # mylist.print_list()
 
-for x in mylist:
-    print(x, end=' ')
+# for x in mylist:
+#     print(x, end=' ')

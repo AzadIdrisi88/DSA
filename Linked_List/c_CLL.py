@@ -1,5 +1,20 @@
 '''
 circular Linked list is a linear data structure.
+                          Assignment 3-:- Circular Linked List
+1. Define a class Node to describe a node of a Circular Linked List.
+2. Define a class CLL to implement Circular Linked list with __init__() method to create and initialise
+   start reference variable.
+3. Define a method is_empty() to check if the linked list is empty in CLL class.
+4. In class CLL, define a method insert_at_start() to insert an element at the starting of the list.
+5. In class CLL, define a method insert_at_last() to insert an element at the end of the list.
+6. In class CLL, define a method search() to find a node with specified element value.
+7. In class CLL, define a method insert_after() to insert a new node after a given node of the list.
+8. In class CLL, define a method to print all the elements of the list.
+9. In class CLL, implement Iterator for CLL to access all the elements of the list in a sequence.
+10.In class CLL, define a method  delete_first() to delete first element from the list.
+11.In class CLL, define a method  delete_last() to delete last element from the list.
+10.In class CLL, define a method  delete_item() to delete specified element from the list.
+
 '''
 
 
@@ -88,19 +103,18 @@ class CLL:
                     self.last = None
             else:
                 if self.last.next.item == data:
-                        self.delete_first()
+                    self.delete_first()
                 else:
                     temp = self.last.next
                     while temp != self.last:
                         if temp.next == self.last:
-                            if self.last.item==data:
+                            if self.last.item == data:
                                 self.delete_last()
                                 break
                         if temp.next.item == data:
                             temp.next = temp.next.next
                             break
                         temp = temp.next
-                    
 
     def __iter__(self):
         if self.last == None:
@@ -113,7 +127,7 @@ class CLLIterator:
     def __init__(self, start):
         self.current = start
         self.start = start
-        self.count=0
+        self.count = 0
 
     def __iter__(self):
         return self
@@ -121,10 +135,10 @@ class CLLIterator:
     def __next__(self):
         if self.current == None:
             raise StopIteration
-        if self.current == self.start and self.count==1:
+        if self.current == self.start and self.count == 1:
             raise StopIteration
         else:
-            self.count=1
+            self.count = 1
         data = self.current.item
         self.current = self.current.next
         return data
@@ -136,16 +150,14 @@ mylist.insert_at_start(48)
 mylist.insert_at_start(98)
 mylist.insert_at_last(100)
 mylist.insert_at_last(120)
-mylist.insert_after(mylist.search(98),99)
+mylist.insert_after(mylist.search(98), 99)
 mylist.print_list()
 
 # mylist.delete_first()
 # mylist.delete_last()
-mylist.delete_item(10)
-mylist.print_list()
+# mylist.delete_item(10)
+# mylist.print_list()
 
 
-
-# for i in mylist:
-#     print(i,end=' ')
-
+for i in mylist:
+    print(i, end=' ')
