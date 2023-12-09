@@ -1,6 +1,8 @@
 '''
                         Assignment 6:-- Stack Extending List
 
+         "(The Working Principle of Stack is LIFO - Last In First Out)"
+
 1. Define a class Stack to implement stack data structure by extending list class.
 2. Define a method is_empty() to check if the stack is empty in Stack class.
 3. In stack class, define push() method to add data onto the stack.

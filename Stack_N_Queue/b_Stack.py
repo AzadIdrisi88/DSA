@@ -2,6 +2,8 @@
 Stack is also a linear data structure.Data Structure is like a container in which we store data.
                              
                           Assignment 5:-- Stack Using List
+                          
+            "(The Working Principle of Stack is LIFO - Last In First Out)"
 
 1. Define a class Stack to implement stack data structure using list.
    Define __init__() method to create an empty list object as instance object member of stack.

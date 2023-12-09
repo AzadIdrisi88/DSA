@@ -1,5 +1,8 @@
 '''
                   Assignment 8:-- Stack Using Linked List Concept
+
+            "(The Working Principle of Stack is LIFO - Last In First Out)"
+
 1. Import module containing singly linked list code in your python file.
 2. Define a class Stack to implement stack data structure.Define  __init__() method to create Singly
    Linked List(SLL) object.

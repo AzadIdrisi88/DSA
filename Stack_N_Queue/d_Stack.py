@@ -1,6 +1,8 @@
 '''
                             Assignment 7:-- Stack Using Linked List Concept
 
+                   "(The Working Principle of Stack is LIFO - Last In First Out)"
+
 1. Define a class Stack to implement stack data structure using singly linked list concept.
 2. Define  __init__() method to initialise start reference variable and item_count variable
    to keep track of number of elements in the stack.

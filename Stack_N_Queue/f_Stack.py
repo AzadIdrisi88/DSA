@@ -1,5 +1,8 @@
 '''
                  Assignment 8:-- Stack Implementation by extending SLL
+
+            "(The Working Principle of Stack is LIFO - Last In First Out)"
+
 1. Import module containing singly linked list code in your python file.
 2. Define a class Stack to implement stack data structure by inheriting SLL class.
 3. Define a method is_empty() to check if the stack is empty in Stack class.
